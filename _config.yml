@@ -16,7 +16,7 @@ timezone: America/Detroit
 
 title: Alexander Stark # the main title
 
-tagline: Applying Computation to Science # it will display as the subtitle
+tagline: Computational Chemist # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A page which will focus on projects I have worked on and qualifications I have earned. Mainly in the realm of Computational Chemistry, Scientific Computing, Artificial Intelligence, 3D printing, etc.
@@ -24,7 +24,6 @@ description: >- # used by seo meta and the atom feed
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://drstark.github.io"
-baseurl: ""
 
 github:
   username: alstark1 # change to your GitHub username
@@ -99,7 +98,10 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: assets/img/headshot.jpg
+avatar: assets/img/head.jpg
+
+  #custom_css:
+  #- assets/css/custom.css
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

@@ -1,0 +1,21 @@
+#sidebar .avatar,
+#sidebar .site-avatar {
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar .avatar img 
+#sidebar .site-avatar img {
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+#sidebar li.nav-item:has(a.nav-link[href="/"]) {
+  display: none;
+}
+
+@import "{{ site.theme }}";
+
+#sidebar {
+  background-color: red !important;
+}
