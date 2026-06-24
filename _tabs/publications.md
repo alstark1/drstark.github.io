@@ -19,4 +19,5 @@ Poster Presentations:
  - Karle Symposium, Ann Arbor, MI, July 25th, 2025 
  - Congress of the World association of Theoretical and Computational Chemists (WATOC), Oslo, Norway, June 22nd-27th, 2025
  - Midwest Theoretical Chemistry Conference (MWTCC), Detroit, MI, May 29th-31st, 2025
+ - International Congress on Quantum Chemistry (ICQC), Berkeley, CA, May 31st-June 5th, 2026
 
