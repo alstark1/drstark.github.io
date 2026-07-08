@@ -12,7 +12,7 @@ In this post, we will look at different Machine Learning (ML) techniques applied
 I have made a Jupyter notebook for the reader to follow along with, and I have not set a specific seed for random number generation, so results may vary. 
 I have allowed the user to select how much printout they desire with the prl variable.
 The intention is for 0 to print no results as text, 1 to print information which I consider to be important to the post, with most of the checks left out, and 2 to print everything.
-The notebook can be [downloaded]({{ '/assets/notebooks/iris.ipynb' | relative_url }}) or used within a [browser]({{ '/assets/webhost_nb/jupyterlite/lab/index.html?path=iris.ipynb' | relative_url }}){:target="_blank" rel="noopener noreferrer"}.
+The notebook can be [downloaded]({{ '/assets/notebooks/iris.ipynb' | relative_url }}) or used within a [browser]({{ '/assets/webhost_nb/jupyterlite_iris/lab/index.html?path=iris_web.ipynb' | relative_url }}){:target="_blank" rel="noopener noreferrer"}.
 As a rough overview, the topics covered here include principal component analysis (PCA), K-nearest neighbors (KNN), K-means clustering (KMC), and support vector machines (SVM), as well as concepts related to analysis within these methods.
 Since this is rather involved, feel free to use the links on the right side of the page to navigate to a specific section/method you are interested in; the notebook also contains headers with the same subsections.
 
