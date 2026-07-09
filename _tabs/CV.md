@@ -11,7 +11,7 @@ order: 2
 | 9/2017 --- 4/2021 | B.S. in Engineering Chemistry, Oakland University, Rochester Hills, MI |
 
 | Work and Experience |
-| Date | Degree |
+| Date | Position |
 |------|--------|
 | 6/2026 --- | Research Associate (Zimmerman Group), University of Michigan, Ann Arbor, MI |
 | 5/2022 --- 6/2026| Graduate Student Research Assistant (Zimmerman Group), University of Michigan, Ann Arbor, MI |
