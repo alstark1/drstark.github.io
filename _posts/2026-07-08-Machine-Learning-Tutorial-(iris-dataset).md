@@ -112,8 +112,8 @@ if(prl > 0):
 ![PCA Scree Plot-light](/assets/img/2026-07-08-website_post/pca_scree_light.png){: .light}
 ![PCA Scree Plot-dark](/assets/img/2026-07-08-website_post/pca_scree_dark.png){: .dark}
 
-A scree plot shows the variance associated with each principal component; the cell preceding to the plot prints the ratio of the variance from each component and the singular values used to obtain the variance.
-It is important to think about how much variance in sufficient to retain for your purposes, it will be left to the reader to experiment with this on their own; some ranges are 95-99% for applications with require minimal loss of information (financial predictions), 85-95% for applications where some information can afford to be lost (scientific applications where data can be overfit).
+A scree plot shows the variance associated with each principal component; the cell preceding the plot prints the ratio of the variance from each component and the singular values used to obtain the variance.
+It is important to think about how much variance is sufficient to retain for your purposes, it will be left to the reader to experiment with this on their own; some ranges are 95-99% for applications which require minimal loss of information (financial predictions), 85-95% for applications where some information can afford to be lost (scientific applications where data can be overfit).
 With visualization in mind, I created a second PCA variable, pca2, to retain only the first 2 components.
 The pca2 variable will be useful later when using the support vector machine (SVM), as it will allow for visualization on a 2-dimensional plot.
 A loading plot was also produced to see how each of the original 4 variables corresponds to the principal components.
@@ -123,9 +123,9 @@ A loading plot was also produced to see how each of the original 4 variables cor
 
 The loading plot indicates that the petal length and width are highly correlated and largely contribute to the (first) principal component with the highest variance.
 The sepal width is mostly related to the (second) principal component with the second highest variance; there is also a slight negative correlation relating to the first principal component.
-Finally, sepal length seems to contribute roughly equally to both principal components in a positively.
+Finally, sepal length seems to contribute roughly equally to both principal components positively.
 
-## 3. K Nearest Neighbors (KNN)
+## 3. K-Nearest Neighbors (KNN)
 
 The idea behind K-nearest neighbors is quite simple; if we visualize our data on a grid, as we did when preparing the iris data, we can see that distinct regions relating to each class exist.
 If we introduce a new data point, we can select $K$ neighbors to predict its species.
@@ -185,13 +185,13 @@ A simple analysis of the error (ratio of incorrect predictions to total predicti
 ## 4. K-Means Clustering (KMC)
 
 K-means clustering is an unsupervised learning technique; the idea is to define a specified number of centroids to represent different clusters of data (we can set the number of centroids to 3 since we have 3 species) and minimize the distances between points in a cluster and their assigned centroid.
-A cluster here is defined as the ser of points closest to a centroid.
+A cluster here is defined as the set of points closest to a centroid.
 The question is then how we determine where the centers go.
 We need to know where a center is to calculate the distance from a point to the center, but we also need to know which points are associated with a given center to calculate the distance.
 The answer is that we solve this self-consistently using some initial assumption of where the centers are located.
 The procedure goes as follows:
 
-1. Start by defining a guess for the location of the centroids; this can be random vectos with proper scaling, or you can choose randomly from your data points for initial guesses.
+1. Start by defining a guess for the location of the centroids; this can be random vectors with proper scaling, or you can choose randomly from your data points for initial guesses.
 
 2. Calculate the distance from each point to each centroid and determine which point is associated with a given centroid.
 We will assume Euclidean distance is chosen (in principle, any distance metric can be chosen), which would use:
@@ -208,7 +208,7 @@ The point would be associated with whichever center it is closest to; in other w
 This procedure can get stuck in local minima pretty easily; another way of looking at this is that the final clusterings are heavily dependent on the initial guess for the centroid positions.
 One way to rectify this is to run the algorithm many times and see which clusterings it tends toward most; this is also generally a good idea with any ML method.
 As was mentioned at the beginning, this code does not set a seed value, so you should be able to test this pretty easily by resetting the notebook's kernel and analyzing the differences in the plots you see.
-With the iris example, we first import Kmeans from Scikit-learn and fit the model with n_clusters=3 and the n_init='auto', which controls how many times the algorithm is restarted with different seeds to keep the best quality run, when set to auto it depends on the method used.
+With the iris example, we first import KMeans from Scikit-learn and fit the model with n_clusters=3 and n_init='auto', which controls how many times the algorithm is restarted with different seeds to keep the best quality run, when set to auto it depends on the method used.
 In the default case, the method is set to k-means++, where the seeds (initial centroids) are spread out probabilistically, and n_init is set to 1.
 ```python
 from sklearn.cluster import KMeans
@@ -319,7 +319,7 @@ $$
 \label{eq:5.3}
 \end{equation}
 $$
-For a given data point n, since we know setosa is less than -1, equation 6 can be constrained to:
+For a given data point n, since we know setosa is less than -1, equation 5 can be constrained to:
 $$
 \begin{equation}
 \boldsymbol{\theta}^T\mathbf{x}^{(n)}+\theta_0 \leq -1
@@ -563,7 +563,7 @@ The first plot shows results varying with $C$ from 1.0 to 25.0 in increments of 
 
 The accuracy remains relatively consistent as $C$ varies; in principle, if $C$ were increased further, it would eventually overfit the data by giving cluster violations too much weight.
 Since the iris dataset is well-behaved, it becomes more difficult to observe the loss of accuracy as the margin is shrunk with increasing $C$.
-The second plot shows results varying with $\gamma$ from 0.0001 to 10.0 in increments of $10^i$ where $i=0,1,2,3,4,5,6$ and $C = 1.0$.
+The second plot shows results varying with $\gamma$ from 0.0001 to 10.0 in multiples of $10^i$ where $i=0,1,2,3,4,5$ and $C = 1.0$.
 
 ![SVM RBF cc Plot-light](/assets/img/2026-07-08-website_post/svm_rbf_cc_light.png){: .light }
 ![SVM RBF cc Plot-dark](/assets/img/2026-07-08-website_post/svm_rbf_cc_dark.png){: .dark }

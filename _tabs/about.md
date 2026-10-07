@@ -9,7 +9,7 @@ order: 1
 
 I currently work as a research associate studying Electronic Structure Theory in the Zimmerman Lab. My dissertation focuses mainly on developing and utilizing highly accurate wavefunction theory methods.
 I have defended my thesis and obtained a PhD in Chemistry and Scientific Computing from the University of Michigan in 2026.
-In my free time I enjoy reading (especially philosophical literature), exercising, 3D printing, video games, and working on miscillaneous projects which interest me.
+In my free time I enjoy reading (especially philosophical literature), exercising, 3D printing, video/board games, and working on miscillaneous projects which interest me.
 Generally, both personally and professionally, I am very interested in solving difficult problems computationally, namely, I am interested in:
 - High-Performance Computing (CUDA,OpenMP,OpenMPI,OpenACC)
 - Computational Quantum Mechanics

@@ -16,7 +16,7 @@ timezone: America/Detroit
 
 title: Alexander Stark # the main title
 
-tagline: Computational Chemist # it will display as the subtitle
+tagline: Computational Chemist | HPC Software Developer # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A page which will focus on projects I have worked on and qualifications I have earned. Mainly in the realm of Computational Chemistry, Scientific Computing, Artificial Intelligence, 3D printing, etc.

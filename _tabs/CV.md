@@ -13,7 +13,8 @@ order: 2
 | Work and Experience |
 | Date | Position |
 |------|--------|
-| 6/2026 --- | Research Associate (Zimmerman Group), University of Michigan, Ann Arbor, MI |
+| 8/2026 --- | Lecturer I, University of Michigan, Ann Arbor, MI |
+| 6/2026 --- 7/2026 | Research Associate (Zimmerman Group), University of Michigan, Ann Arbor, MI |
 | 5/2022 --- 6/2026| Graduate Student Research Assistant (Zimmerman Group), University of Michigan, Ann Arbor, MI |
 | 8/2021 --- 4/2026 | Graduate Student Instructor, University of Michigan, Ann Arbor, MI |
 | 8/2023 --- 12/2023 | Future Faculty Graduate Student Instructor (CHEM 262 (Mathematical Methods for Physical Scientists)), University of Michigan, Ann Arbor, MI |
